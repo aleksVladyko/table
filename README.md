@@ -1,3 +1,8 @@
+необходима версия node 20+
+клонируем проект 
+переходим в папку с проектом
+устанавливаем зависимости npm install 
+запускаем npm run dev
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
