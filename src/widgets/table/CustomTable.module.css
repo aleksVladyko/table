@@ -1,0 +1,122 @@
+.custom_table_wrapper {
+    width: 1600px;
+    height: 400px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    height: inherit;
+    width: inherit;
+}
+.grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: [one] 1fr [two] auto [three] 1fr [four] auto [five] auto [six] 1fr [seven] 1fr [column-end];
+    grid-template-rows: [row1-start] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row-end];
+    grid-auto-flow: row;
+}
+
+.cell {
+    background-color: white;
+    border: 1px solid #ccc;
+
+    padding: var(--base-padding);
+    display: flex;
+    align-items: center;
+}
+.cell-1 {
+    background-color: #E3E3E3;
+    ;
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: row1-start;
+    grid-row-end: row2;
+}
+
+.cell-2 {
+    background-color: #E3E3E3;
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: row1-start;
+    grid-row-end: row2;
+}
+
+.cell-3 {
+    background-color: #E3E3E3;
+    grid-column-start: three;
+    grid-column-end: seven;
+    grid-row-start: row1-start;
+    grid-row-end: row2;
+}
+
+.cell-4 {
+    background-color: #E3E3E3;
+    grid-column-start: seven;
+    grid-column-end: column-end;
+    grid-row-start: row1-start;
+    grid-row-end: row2;
+}
+.cell-5 {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+
+.cell-6 {
+    grid-column-start: two;
+    grid-column-end: six;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+
+.cell-7 {
+    grid-column-start: six;
+    grid-column-end: column-end;
+    grid-row-start: row2;
+    grid-row-end: row-end;
+}
+
+.cell-8 {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: row3;
+    grid-row-end: row-end;
+}
+.cell-9 {
+    grid-column-start: two;
+    grid-column-end: four;
+    grid-row-start: row3;
+    grid-row-end: row4;
+}
+
+.cell-10 {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: row3;
+    grid-row-end: row4;
+}
+
+.cell-11 {
+    grid-column-start: five;
+    grid-column-end: six;
+    grid-row-start: row3;
+    grid-row-end: row4;
+}
+
+.cell-12 {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: row4;
+    grid-row-end: row-end;
+}
+.cell-13 {
+    grid-column-start: three;
+    grid-column-end: six;
+    grid-row-start: row4;
+    grid-row-end: row-end;
+}

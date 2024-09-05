@@ -1,0 +1,24 @@
+.wrapper_cell_input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.cell_input {
+    justify-content: center;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    width: inherit;
+    height: inherit;
+    font-size: 1.2rem;
+}
+.cell_textarea {
+    border: none;
+    outline: none;
+    width: inherit;
+    height: inherit;
+    resize: none;
+    font-size: 1.2rem;
+}
